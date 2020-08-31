@@ -403,9 +403,74 @@ button {
     margin: 1% auto 1% auto;
     text-align: center;
 }
+img  {
+    max-width: 100%;
+    height:  auto;
+    object-fit:  fill;
+}
+.foto_trainers {
+    z-index:  0;
+    -webkit-display:  flex;
+    display:  flex;
+    align-items:  center;
+    justify-content:  center;
+    flex-flow:  row wrap;
+    max-width:  auto;
+    height:  auto;
+}
+.trainer_name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 0 0;
+    color: #019be1;
+    text-shadow: 6px 8px 15px rgba(0,0,0,0.5);
+}
+.caption {
+    z-index:  0;
+    display:  flex;
+    align-items:  center;
+    justify-content:  space-around;
+    flex-flow:  column wrap;
+    width:  fit-content;
+    max-width:  1835;
+    height:  auto;
+    object-fit:  none;
+    margin:  10px 5px 30px 5px;
+    /* border-radius: 7px; */
+    /* box-shadow:  0 24px 28px rgba(0, 0, 0, 0.1),  0 10px 10px rgba(0, 0, 0, 0.1); */
+}
+.scale {
+    border-radius: 300px;
+    display:  inline-block;
+    overflow:  hidden;
+    }
+.scale img {
+    transition:  0.2s;
+    display:  block;
+}
+.scale img:hover {
+    transform:  scale(1);
+}
 
 
 
+
+
+.trainers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    height: auto;
+}
+.trainer {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 300px;
+    height: 500px;
+    background-size: cover;
+}
 
 
 
