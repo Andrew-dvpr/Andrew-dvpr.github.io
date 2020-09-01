@@ -506,13 +506,28 @@ img  {
 
 .contacts_block {
     margin: 2%;
-    padding: 0;
+    padding: 1%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 
 }
-
+.contacts_note {
+    margin: 0;
+    padding: 12px 0 12px 0;
+    height: 40px;
+  text-align: center;
+}
+.contacts_col_address {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+.contacts_col {
+   width: 120px;
+    margin: 0;
+    padding: 0;
+}
 
 
 
@@ -691,6 +706,11 @@ html, body {
     .trainer {
           flex-flow: row wrap;
     }
+    .contacts_col {
+        width: 110px;
+         margin: 0;
+         padding: 0;
+     }
     .copyright_text {
         margin: 170px 0 0 0;
     }
