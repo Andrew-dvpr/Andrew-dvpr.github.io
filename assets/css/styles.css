@@ -227,6 +227,7 @@ a.back-to-top:hover  {
     margin: 0 5px;
     min-width: fit-content;
     text-align: right;
+    justify-content: center;
 
 }
 .btn-secondary {
@@ -327,7 +328,7 @@ box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.14);
 }
 nav {
     
-    z-index: 999;
+    z-index: 997;
 }
 .navbar-toggler {
     /* border-radius: 30px; */
@@ -404,6 +405,7 @@ button {
     text-align: center;
 }
 img  {
+
     max-width: 100%;
     height:  auto;
     object-fit:  fill;
@@ -414,7 +416,7 @@ img  {
     display:  flex;
     align-items:  center;
     justify-content:  center;
-    flex-flow:  row wrap;
+    flex-flow:  column wrap;
     max-width:  auto;
     height:  auto;
 }
@@ -422,9 +424,13 @@ img  {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     text-align: center;
-    margin: 0 0 0 0;
+    margin: 0;
+    padding: 0;
     color: #019be1;
     text-shadow: 6px 8px 15px rgba(0,0,0,0.5);
+}
+.trainer_name p {
+    margin: 5px;
 }
 .wrap_note_trainers {
     margin: 0 auto 0 auto;
@@ -432,37 +438,64 @@ img  {
     display: flex;
     justify-content:  center;
 }
-.note_trainer {
+.note_trainers {
     /* background-color: #f8f8f8; */
     padding: 25px 15px 0 15px;
     margin: 0 0 20px 0;
-    border: 1px solid rgb(233, 233, 233);
+    /* border: 1px solid rgb(233, 233, 233); */
     /* border-radius: 15px; */
     text-align: justify;
-    width: 70%;
+    width: 90%;
     text-indent: 25px;
-    box-shadow:  0 12px 14px rgba(0, 0, 0, 0.1),  0 5px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow:  0 12px 14px rgba(0, 0, 0, 0.1),  0 5px 5px rgba(0, 0, 0, 0.1); */
 }
+.note_trainers_personal {
+    padding: 10px 10px 0 10px;
+    margin: 0 0 20px 0;
+    /* border: 1px solid rgb(233, 233, 233); */
+    /* border-radius: 15px; */
+    text-align: justify;
+    width: 80%;
+    text-indent: 15px;
+    /* box-shadow:  0 12px 14px rgba(0, 0, 0, 0.1),  0 5px 5px rgba(0, 0, 0, 0.1); */
+}
+.trainer {
+    border-radius: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
 .caption {
+    position:relative;
     z-index:  0;
     display:  flex;
     align-items:  center;
     justify-content:  space-around;
     flex-flow:  column wrap;
-    width:  fit-content;
-    max-width:  1835;
+    /* width:  fit-content; */
+    width:  90%;
     height:  auto;
     object-fit:  none;
-    margin:  10px 5px 30px 5px;
+    margin:  10px 15px 30px 15px;
     /* border-radius: 7px; */
     /* box-shadow:  0 24px 28px rgba(0, 0, 0, 0.1),  0 10px 10px rgba(0, 0, 0, 0.1); */
 }
 .scale {
-    border-radius: 300px;
+    margin: 0 10px 0 10px;
+    justify-content: center;
     display:  inline-block;
     overflow:  hidden;
     }
 .scale img {
+    border-radius: 300px;
     transition:  0.2s;
     display:  block;
 }
@@ -472,22 +505,6 @@ img  {
 
 
 
-
-
-.trainers {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    height: auto;
-}
-.trainer {
-    display: flex;
-    flex-flow: column nowrap;
-    max-width: 300px;
-    height: 500px;
-    background-size: cover;
-}
 
 
 
@@ -661,6 +678,9 @@ html, body {
     }
     .navbar-toggler {
         margin-left: auto;
+    }
+    .trainer {
+          flex-flow: row wrap;
     }
     .copyright_text {
         margin: 170px 0 0 0;

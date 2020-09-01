@@ -1,0 +1,13 @@
+.blinkP:before {
+    -webkit-animation: blinks ease-in-out 3s infinite;
+    animation: blinks ease-in-out 3s infinite;
+    position: absolute;
+    left: -80px;
+    bottom: -6px;
+    height: 120%;
+    content: '';
+    background: url(../img/blink.png) no-repeat center;
+    background-size: contain;
+    width: 66px;
+    height: 135px;
+}
