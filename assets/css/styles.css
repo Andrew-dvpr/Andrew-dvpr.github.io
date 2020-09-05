@@ -103,9 +103,9 @@ a.back-to-top  {
     
     border-radius:  30px;
     
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.14);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.14);
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.14);
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0 0 5px 2px rgba(0,0,0,0.14);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.14);
 }
 a.back-to-top:hover  {
     opacity:  0.7;
@@ -234,21 +234,20 @@ a.back-to-top:hover  {
     border: none;
     /* background-color: rgb(184, 255, 202); */
     color:  rgb(255, 255, 255);
-    font-weight: bolder;
     /* border-radius: 18px; */
     font-family: 'Montserrat', sans-serif;
     font-size: 100%;
     font-weight: bolder;
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.14);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.14);
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.14);
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0 0 5px 2px rgba(0,0,0,0.14);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.14);
 }
 .btn-secondary:hover {
     /* background-color: rgb(5, 201, 103); */
     /* border-color: rgb(5, 201, 103); */
-    -webkit-box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.14);
--moz-box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.14);
-box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.14);
+    -webkit-box-shadow: inset 0 0 5px 2px rgba(0,0,0,0.14);
+-moz-box-shadow: inset 0 0 5px 2px rgba(0,0,0,0.14);
+box-shadow: inset 0 0 5px 2px rgba(0,0,0,0.14);
 }
 
 
@@ -318,9 +317,9 @@ box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.14);
     padding: 0 1% 0 1%;
     /* border-radius: 30px; */
     z-index: 999;
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.14);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.14);
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.14);
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0 0 5px 2px rgba(0,0,0,0.14);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.14);
     
 }
 .navbar-brand {
@@ -333,14 +332,14 @@ nav {
 .navbar-toggler {
     /* border-radius: 30px; */
     border: none;
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.14);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.14);
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.14);
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0 0 5px 2px rgba(0,0,0,0.14);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.14);
 }
 .navbar-toggler:hover {
-    -webkit-box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.14);
--moz-box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.14);
-box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.14);
+    -webkit-box-shadow: inset 0 0 5px 2px rgba(0,0,0,0.14);
+-moz-box-shadow: inset 0 0 5px 2px rgba(0,0,0,0.14);
+box-shadow: inset 0 0 5px 2px rgba(0,0,0,0.14);
 }
 button:focus {
     outline: none;
@@ -399,11 +398,13 @@ button {
     text-shadow: 6px 8px 15px rgba(0,0,0,0.5);
 }
 .comments_ya {
-    display: inline-flexbox;
+ 
 
-    margin: 1% auto 1% auto;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+ 
 }
+
 img  {
 
     max-width: 100%;
@@ -412,12 +413,11 @@ img  {
 }
 .foto_trainers {
     z-index:  0;
-    -webkit-display:  flex;
     display:  flex;
     align-items:  center;
     justify-content:  center;
     flex-flow:  column wrap;
-    max-width:  auto;
+    /*max-width:  auto;*/
     height:  auto;
 }
 .trainer_name {
@@ -460,7 +460,7 @@ img  {
     /* box-shadow:  0 12px 14px rgba(0, 0, 0, 0.1),  0 5px 5px rgba(0, 0, 0, 0.1); */
 }
 .trainer {
-    border-radius: none;
+    border-radius: inherit;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -528,7 +528,9 @@ img  {
     margin: 0;
     padding: 0;
 }
-
+.star {
+    width: 50px;
+}
 
 
 
@@ -589,7 +591,7 @@ img  {
     width:  60px;
     color:  #bebebe;
     transition:  all ease 0.3s;
-    text-shadow:  0px 0px 1px black,  0px 0px 1px black;
+    text-shadow:  0 0 1px black,  0 0 1px black;
 }
 .socialIcons li a:hover  {
     padding:  0;
@@ -619,7 +621,6 @@ img  {
     margin:  0;
     padding:  0;
     /* margin-top: auto; */
-    text-align:  center;
     background-image: url(/assets/img/water1.png);
     /* background-color:  rgb(188, 255, 188); */
     /* color:  #8a8a8a; */
