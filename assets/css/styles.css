@@ -6,7 +6,13 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
+img {
+    pointer-events: none;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
 .gradient {
     background-color: rgba(195, 252, 197, 0.64);
     /* IE9, iOS 3.2+ */
@@ -374,7 +380,8 @@ button {
 
 .lorem {
   z-index: -2;
-    margin: 0 5% 0 5%;
+  max-width: 50%;
+    margin: auto;
     text-align: justify;
 }
 
@@ -398,15 +405,14 @@ button {
     text-shadow: 6px 8px 15px rgba(0,0,0,0.5);
 }
 .comments_ya {
- 
-
-    margin: 0;
+    max-width:760px;height:800px;overflow:hidden;position:relative;
+    display: flex;
+    margin: auto;
     padding: 0;
  
 }
 
 img  {
-
     max-width: 100%;
     height:  auto;
     object-fit:  fill;
@@ -431,6 +437,9 @@ img  {
 }
 .trainer_name p {
     margin: 5px;
+}
+.diploma {
+    width: 40px;
 }
 .wrap_note_trainers {
     margin: 0 auto 0 auto;
@@ -531,7 +540,15 @@ img  {
 .star {
     width: 50px;
 }
-
+.water_clean_foto {
+    display: flex;
+    flex-flow: row wrap;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
 
 
 
