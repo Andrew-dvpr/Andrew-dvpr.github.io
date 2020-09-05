@@ -549,8 +549,25 @@ img  {
     text-align: center;
     margin: auto;
 }
-
-
+.wrap_note_price {
+    margin: 0 auto 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:  center;
+}
+.note_price {
+    /* background-color: #f8f8f8; */
+    padding: 25px 15px 0 15px;
+  
+    /* border: 1px solid rgb(233, 233, 233); */
+    /* border-radius: 15px; */
+    text-align: center;
+    width: 90%;
+    text-indent: 25px;
+    margin: auto;
+    /* box-shadow:  0 12px 14px rgba(0, 0, 0, 0.1),  0 5px 5px rgba(0, 0, 0, 0.1); */
+}
 
 .footer  {
     /* position: relative; */
