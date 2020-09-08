@@ -62,12 +62,12 @@
   left: 0px;
 }
 .dnSlide-main .dnSlide-left-btn {
-  background-image: url("/assets/images/left.png");
+  background-image: url("assets/images/left.png");
   background-size: 35%;
   left: 0;
 }
 .dnSlide-main .dnSlide-right-btn {
-  background-image: url("/assets/images/right.png");
+  background-image: url("assets/images/right.png");
   background-size: 35%;
   right: 0;
   left: auto;
@@ -80,10 +80,10 @@
   }
 
   .dnSlide-main .dnSlide-right-btn {
-    background-image: url("/assets/images/right.png");
+    background-image: url("assets/images/right.png");
   }
 
   .dnSlide-main .dnSlide-left-btn {
-    background-image: url("/assets/images/left.png");
+    background-image: url("assets/images/left.png");
   }
 }
