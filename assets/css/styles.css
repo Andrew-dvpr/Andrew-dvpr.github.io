@@ -794,9 +794,62 @@ img {
     padding: 0;
 }
 
-.star {
-    width: 50px;
+.stars {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
 }
+
+.star_left {
+    max-width: 50px;
+    height: 50px;
+    background: url(/assets/images/star1.png);
+    animation-name: starleft;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    /* animation-duration: 3s; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes starleft {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotate(90deg) translateY(0);
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(0);
+    }
+}
+
+.star_right {
+    max-width: 50px;
+    height: 50px;
+    background: url(/assets/images/star2.png);
+    animation-name: starright;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    /* animation-duration: 3s; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes starright {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotate(-90deg) translateY(0);
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(0);
+    }
+}
+
 
 .water_clean_foto {
     display: flex;
@@ -954,10 +1007,6 @@ body {
     padding: 0;
     height: 100%;
 }
-
-
-
-
 
 
 
