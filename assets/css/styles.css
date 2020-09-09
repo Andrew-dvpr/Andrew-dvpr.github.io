@@ -1100,6 +1100,12 @@ body {
         visibility: visible;
     }
 
+    .lorem {
+        max-width: 100%;
+        margin: auto;
+        text-align: justify;
+    }
+
     .copyright_text {
         margin: 170px 0 0 0;
     }
