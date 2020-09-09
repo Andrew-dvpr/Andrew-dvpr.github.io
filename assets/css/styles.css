@@ -807,7 +807,6 @@ img {
     animation-name: starleft;
     animation-duration: 5s;
     animation-delay: 1s;
-    /* animation-duration: 3s; */
     animation-iteration-count: infinite;
 }
 
@@ -832,7 +831,6 @@ img {
     animation-name: starright;
     animation-duration: 5s;
     animation-delay: 1s;
-    /* animation-duration: 3s; */
     animation-iteration-count: infinite;
 }
 
