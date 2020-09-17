@@ -887,6 +887,7 @@ img {
     font-weight: bolder;
     text-align: center;
     color: #019be1;
+    background-size: cover;
 }
 
 .copyright_text {
