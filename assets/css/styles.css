@@ -788,14 +788,18 @@ img {
 }
 
 .footer {
-    /* position: relative; */
+    position: relative;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    height: fit-content;
+    height: 300px;
     margin: 0;
     padding: 0;
     text-align: center;
+    background-image: url(/assets/img/footer_bg.jpg);
+    background-size: cover;
+    background-position: top;
+    height: auto;
     /* background-image: url(assets/img/gazon.png); */
     /* background-color:  rgb(188, 255, 188); */
     color: #040113;
@@ -873,14 +877,12 @@ img {
 }
 
 .copyright {
+    position: relative;
     width: 100%;
-    height: 300px;
+    max-height: 250px;
     margin: 0;
     padding: 0;
-    /* margin-top: auto; */
-    background-image: url(/assets/img/footer_bg.jpg);
-    /* background-color:  rgb(188, 255, 188); */
-    /* color:  #8a8a8a; */
+   
     min-width: 300px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -891,7 +893,8 @@ img {
 }
 
 .copyright_text {
-    margin: 50px 0 0 0;
+    position: relative;
+    margin: 170px 0 0 0;
 }
 
 
@@ -987,10 +990,11 @@ body {
         margin: 0;
         padding: 0;
     }
-
+    
     .copyright_text {
         margin: 170px 0 0 0;
     }
+   
 }
 
 @media only screen and (max-device-width: 1100px) and (min-device-width: 992px) {
@@ -1031,7 +1035,7 @@ body {
         margin: auto;
         text-align: justify;
     }
-
+    
     .copyright_text {
         margin: 170px 0 0 0;
     }
@@ -1061,7 +1065,7 @@ body {
         margin: auto;
         text-align: justify;
     }
-
+    
     .copyright_text {
         margin: 170px 0 0 0;
     }
@@ -1087,7 +1091,7 @@ body {
     }
 
     .copyright_text {
-        margin: 50px 0 0 0;
+        margin: 170px 0 0 0;
     }
 }
 
@@ -1111,7 +1115,7 @@ body {
     }
 
     .copyright_text {
-        margin: 50px 0 0 0;
+        margin: 170px 0 0 0;
     }
 }
 
@@ -1135,6 +1139,6 @@ body {
     }
 
     .copyright_text {
-        margin: 0 0 0 0;
+        margin: 170px 0 0 0;
     }
 }
