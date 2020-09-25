@@ -1,7 +1,13 @@
 /*!
+<<<<<<< HEAD:css/css/bootstrap-reboot.css
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
+=======
+ * Bootstrap Reboot v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+>>>>>>> b668c95f9839c740ca66e134499f3d0a3ae2d9a7:assets/css/bootstrap-reboot.css
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
@@ -15,6 +21,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+<<<<<<< HEAD:css/css/bootstrap-reboot.css
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent; }
@@ -28,6 +35,18 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+=======
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+>>>>>>> b668c95f9839c740ca66e134499f3d0a3ae2d9a7:assets/css/bootstrap-reboot.css
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -35,8 +54,14 @@ body {
   text-align: left;
   background-color: #fff; }
 
+<<<<<<< HEAD:css/css/bootstrap-reboot.css
 [tabindex="-1"]:focus {
   outline: 0 !important; }
+=======
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: 0 !important;
+}
+>>>>>>> b668c95f9839c740ca66e134499f3d0a3ae2d9a7:assets/css/bootstrap-reboot.css
 
 hr {
   -webkit-box-sizing: content-box;
@@ -58,7 +83,14 @@ abbr[data-original-title] {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
+<<<<<<< HEAD:css/css/bootstrap-reboot.css
   border-bottom: 0; }
+=======
+  border-bottom: 0;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+>>>>>>> b668c95f9839c740ca66e134499f3d0a3ae2d9a7:assets/css/bootstrap-reboot.css
 
 address {
   margin-bottom: 1rem;
@@ -87,9 +119,12 @@ dd {
 blockquote {
   margin: 0 0 1rem; }
 
+<<<<<<< HEAD:css/css/bootstrap-reboot.css
 dfn {
   font-style: italic; }
 
+=======
+>>>>>>> b668c95f9839c740ca66e134499f3d0a3ae2d9a7:assets/css/bootstrap-reboot.css
 b,
 strong {
   font-weight: bolder; }
@@ -114,19 +149,38 @@ a {
   color: #007bff;
   text-decoration: none;
   background-color: transparent;
+<<<<<<< HEAD:css/css/bootstrap-reboot.css
   -webkit-text-decoration-skip: objects; }
   a:hover {
     color: #0056b3;
     text-decoration: underline; }
+=======
+}
 
-a:not([href]):not([tabindex]) {
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+>>>>>>> b668c95f9839c740ca66e134499f3d0a3ae2d9a7:assets/css/bootstrap-reboot.css
+
+a:not([href]) {
   color: inherit;
+<<<<<<< HEAD:css/css/bootstrap-reboot.css
   text-decoration: none; }
   a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
     color: inherit;
     text-decoration: none; }
   a:not([href]):not([tabindex]):focus {
     outline: 0; }
+=======
+  text-decoration: none;
+}
+
+a:not([href]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+>>>>>>> b668c95f9839c740ca66e134499f3d0a3ae2d9a7:assets/css/bootstrap-reboot.css
 
 pre,
 code,
@@ -193,11 +247,26 @@ button,
 select {
   text-transform: none; }
 
+[role="button"] {
+  cursor: pointer;
+}
+
+select {
+  word-wrap: normal;
+}
+
 button,
-html [type="button"],
+[type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; }
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -212,12 +281,15 @@ input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0; }
 
+<<<<<<< HEAD:css/css/bootstrap-reboot.css
 input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
   -webkit-appearance: listbox; }
 
+=======
+>>>>>>> b668c95f9839c740ca66e134499f3d0a3ae2d9a7:assets/css/bootstrap-reboot.css
 textarea {
   overflow: auto;
   resize: vertical; }
@@ -250,7 +322,6 @@ progress {
   outline-offset: -2px;
   -webkit-appearance: none; }
 
-[type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
